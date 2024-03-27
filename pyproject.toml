@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "arnette"
+version = "0.1.0"
+description = "Personal assistant demo"
+authors = ["Terry"]
+
+[tool.poetry.dependencies]
+python = ">=3.10.0,<3.12"
+crewai = "^0.11.0"
+python-dotenv = "^1.0.1"
+
+[tool.pyright]
+useLibraryCodeForTypes = true
+exclude = [".cache"]
+
+[tool.ruff]
+select = ['E', 'W', 'F', 'I', 'B', 'C4', 'ARG', 'SIM']
+ignore = ['W291', 'W292', 'W293']
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

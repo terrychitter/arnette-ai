@@ -1,0 +1,1 @@
+objects = ["coffee", "tea", "latte"]
