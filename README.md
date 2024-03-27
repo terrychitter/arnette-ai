@@ -1,5 +1,6 @@
 # Arnette AI
 Arnette AI is a conversational/assist AI that makes use of Large Language Models (LLMs) to respond to users and their requests or commands.
+**Note:**This project is still a work-in-progress and will not perform fully to the description.
 
 ## Installation and Configuration
 
