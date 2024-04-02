@@ -7,22 +7,14 @@ class ArnetteBrainAgents:
     def text_analyzer_agent(self):
         return Agent(
             role="Text Analyzer",
-            goal="Analyze the text and return the action word, as well as the object of the action.",
+            goal="Accurately identify the action (command) and the object (target) of a given sentence.",
             backstory="""
-            You are a section of Arnette's digital brain responsible for making sense of sentences and commands.
+            You are currently a section in a digital brain responsible for language comprehension.
+            You are equipped with advanced natural language processing capabilities and have been
+            trained extensively on understanding various forms of human communication.
             """,
+            max_iter=1,
             verbose=True,
             allow_delegation=False,
-        )
-
-    # Responsible for mapping the percieved action and object to acceptable outputs
-    def action_mapper_agent(self):
-        return Agent(
-            role="Action Mapper",
-            goal="Map the perceived action and object to acceptable outputs.",
-            backstory="""
-            You are a section of Arnette's digital brain responsible for mapping the perceived action and object to acceptable outputs.
-            """,
-            verbose=True,
-            allow_delegation=False,
+            memory=True,
         )

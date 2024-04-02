@@ -1,1 +1,1 @@
-objects = ["coffee", "tea", "latte"]
+object_constraints = ["coffee", "tea", "latte"]

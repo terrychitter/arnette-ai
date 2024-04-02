@@ -1,1 +1,1 @@
-actions = ["make", "walk", "run", "speak"]
+action_constraints = ["make", "walk", "run", "speak"]
